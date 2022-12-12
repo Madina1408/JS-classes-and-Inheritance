@@ -88,17 +88,11 @@ StringBuilder.prototype.divide = function (number){
   return this;
 }
 StringBuilder.prototype.remove = function (string){
-  this.curValue=this.curValue.split('');
-  this.stringArray = string.split('');
-
-  for (){
-    
-  }
-
+  this.curValue=this.curValue.replace(string, '');
   return this;
 }
 StringBuilder.prototype.sub = function (from, number){
-  this.curValue=this.curValue.substr(from, number)
+  this.curValue=this.curValue.substr(from, number);
   return this;
 }
 
